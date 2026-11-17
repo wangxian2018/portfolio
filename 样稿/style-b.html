@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- 首屏风格原型 B：深色科技。只用于比较设计，不包含整站。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1117">
+<meta name="description" content="林悦示例作品集首屏，B 深色科技方案。使用系统字体和本地素材。">
+<title>B 深色科技 · 林悦作品集首屏</title>
+<link rel="icon" href="../images/avatar.png" type="image/png">
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#e9f0f4;background:#0b1117;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;line-height:1.7;background-image:linear-gradient(#7db6cb05 1px,transparent 1px),linear-gradient(90deg,#7db6cb05 1px,transparent 1px);background-size:56px 56px}a{color:inherit;text-decoration:none}p,h1,h2,figure{margin:0}img{display:block;max-width:100%;height:auto}a:focus-visible{outline:2px solid #72e3d0;outline-offset:5px}::selection{background:#24554e}h1,p,a,span{overflow-wrap:anywhere}
+.page{width:min(1190px,calc(100% - 112px));margin:auto;padding-bottom:112px}.header{height:96px;border-bottom:1px solid #25303b;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{display:flex;gap:13px;align-items:center;font-size:18px;font-weight:600}.brand-mark{font:19px/1 Consolas,"Courier New",monospace;letter-spacing:-.13em;border:1px solid #6bdfcc;color:#6bdfcc;padding:10px 7px;clip-path:polygon(0 0,85% 0,100% 15%,100% 100%,15% 100%,0 85%)}.brand small{font:10px/1.5 Consolas,"Courier New",monospace;letter-spacing:.12em;color:#7b929f;display:block;font-weight:400}.nav{display:flex;align-items:center;gap:32px;font-size:12px;color:#95a7b2}.nav a{min-height:44px;display:flex;align-items:center}.nav a:hover{color:#72e3d0}.nav span:first-child{color:#e9f0f4}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:48px;min-height:610px;padding:66px 0 48px}.eyebrow{font:11px/1.7 Consolas,"Courier New","Microsoft YaHei",monospace;letter-spacing:.1em;color:#72e3d0;display:flex;gap:11px;align-items:center}.status-dot{width:6px;height:6px;display:inline-block;background:#72e3d0;box-shadow:0 0 12px #72e3d070}.intro{font-size:18px;color:#9caeb9;margin-top:30px}.intro strong{font-weight:500;color:#e9f0f4;margin-left:5px}h1{font-size:clamp(48px,4.4vw,66px);line-height:1.4;letter-spacing:-.055em;font-weight:650;margin-top:13px}h1 .highlight{color:#72e3d0}h1 .line{display:block}.description{font-size:14px;line-height:1.95;color:#93a4b0;margin-top:24px;max-width:450px}.actions{display:flex;align-items:center;gap:26px;margin-top:33px}.primary{background:#72e3d0;border:1px solid #72e3d0;color:#0a2321;font-size:13px;font-weight:650;display:inline-flex;gap:30px;align-items:center;min-height:50px;padding:12px 22px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}.primary:hover{background:#9af0e1}.secondary{color:#c6d4df;display:inline-flex;gap:16px;font-size:13px;min-height:44px;align-items:center}.demo{font:10px/1.9 Consolas,"Microsoft YaHei",monospace;color:#748792;margin-top:25px}
+.map{min-width:0;border:1px solid #2c414d;background:#101a23;box-shadow:12px 12px 0 #0b1117,13px 13px 0 #253743;position:relative}.map:before,.map:after{content:"";position:absolute;width:8px;height:8px;border-color:#72e3d0;border-style:solid}.map:before{border-width:2px 0 0 2px;left:-1px;top:-1px}.map:after{border-width:0 2px 2px 0;right:-1px;bottom:-1px}.map-heading{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #253541;gap:14px;font-size:11px;color:#9cafbb}.map-heading span:last-child{font:9px Consolas,monospace;letter-spacing:.12em;color:#72e3d0}.map-visual{height:300px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}.map-visual svg{position:absolute;width:340px;height:280px;max-width:100%;fill:none;stroke:#2d5763;stroke-width:1}.map-visual svg .signal{stroke:#72e3d0;opacity:.6;stroke-dasharray:3 7}.avatar{width:114px;height:114px;border:1px solid #72e3d0;box-shadow:0 0 0 9px #72e3d00a,0 0 0 10px #304d55;position:relative;z-index:1;overflow:hidden;border-radius:50%}.avatar img{width:100%;height:100%;object-fit:cover;filter:grayscale(.85)}.node{position:absolute;font-size:10px;color:#bbd4de;padding:5px 9px;border:1px solid #32505e;background:#101d28;z-index:2;font-family:Consolas,"Microsoft YaHei",monospace}.node-1{top:38px;left:28px}.node-2{top:38px;right:26px}.node-3{bottom:37px;left:28px}.node-4{bottom:37px;right:26px}.node:before{content:"+";color:#72e3d0;margin-right:7px}.map-footer{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #253541}.metric{padding:14px 13px;text-align:center}.metric+.metric{border-left:1px solid #253541}.metric strong{font:22px/1.4 Consolas,"Microsoft YaHei",monospace;color:#d9e9f0;display:block;font-weight:400}.metric strong span{font-size:12px;color:#8ca5b2;margin-left:2px}.metric small{font-size:9px;color:#8297a4;letter-spacing:.07em}.map-caption{text-align:right;font:9px/1.7 Consolas,"Microsoft YaHei",monospace;color:#617b8b;margin-top:20px;letter-spacing:.08em}
+.foot{border-top:1px solid #25303b;display:flex;align-items:center;justify-content:space-between;gap:25px;padding-top:23px}.foot-skills{display:flex;gap:24px;flex-wrap:wrap;font-size:10px;color:#8da2b0}.foot-skills span{display:flex;gap:8px;align-items:center}.foot-skills i{font:9px Consolas,monospace;color:#4f7c8a;font-style:normal}.preview-note{font-size:10px;color:#738996;text-align:right}
+.switcher{position:fixed;z-index:10;bottom:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;max-width:calc(100% - 24px);padding:6px;border:1px solid #d5d6d8;border-radius:12px;background:#fff;color:#555;box-shadow:0 8px 30px #00000030;font:12px/1.4 system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap}.switcher a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:8px 16px;border-radius:7px}.switcher a:hover{background:#eee}.switcher a[aria-current]{background:#23272c;color:#fff}.switcher .switch-label{font-size:10px;padding:0 12px;color:#999}.switcher .arrow{font-size:17px;padding:8px 12px}
+@media(min-height:850px) and (min-width:900px){.hero{min-height:calc(100svh - 280px)}}
+@media(max-width:1000px){.page{width:calc(100% - 72px)}.hero{gap:34px;grid-template-columns:1.1fr 1fr}h1{font-size:45px}.map-visual{height:260px}.node{font-size:9px;padding:4px 6px}.node-1,.node-3{left:12px}.node-2,.node-4{right:12px}.avatar{width:95px;height:95px}.map-heading{padding:14px}.metric{padding:12px 8px}.nav{gap:20px}.foot-skills{gap:14px}}
+@media(max-width:680px){.page{width:calc(100% - 40px);padding-bottom:100px}.header{height:80px;gap:12px}.brand{font-size:16px;gap:9px}.brand-mark{font-size:15px;padding:8px 6px}.brand small{font-size:8px}.nav{font-size:10px;gap:15px}.nav span:first-child{display:none}.hero{grid-template-columns:minmax(0,1fr);gap:33px;min-height:0;padding:35px 0 32px}.eyebrow{font-size:10px}.intro{margin-top:24px;font-size:16px}h1{font-size:clamp(34px,8.5vw,48px);margin-top:10px;line-height:1.45}.description{font-size:15px;margin-top:18px}.actions{margin-top:24px;gap:25px}.primary{min-height:48px;font-size:12px;padding:11px 18px;gap:22px}.secondary{font-size:12px}.demo{font-size:9px;margin-top:18px}.map{max-width:420px;width:100%;justify-self:center;box-shadow:6px 6px 0 #0b1117,7px 7px 0 #253743}.map-heading{padding:11px 13px;font-size:10px}.map-visual{height:220px}.avatar{width:90px;height:90px}.node-1,.node-2{top:24px}.node-3,.node-4{bottom:24px}.metric strong{font-size:19px}.metric{padding:9px 8px}.metric small{font-size:9px}.map-caption{margin-top:13px;font-size:8px}.foot{flex-direction:column;align-items:start;gap:17px;padding-top:20px}.foot-skills{font-size:10px;gap:12px}.preview-note{text-align:left;font-size:9px}.switcher{bottom:12px;gap:2px;padding:4px;border-radius:10px}.switcher a{padding:8px 9px;font-size:11px;min-height:40px}.switcher .switch-label{display:none}.switcher .arrow{padding:8px 10px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="header"><a class="brand" href="style-b.html"><span class="brand-mark" aria-hidden="true">LY</span><span>林悦<small>AI / EVERYDAY WORK</small></span></a><nav class="nav" aria-label="页面导航示意"><span>关于我</span><span>我的作品</span><a href="mailto:linyue.demo@example.com">联系我 ↗</a></nav></header>
+  <main class="hero">
+    <div class="copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PERSONAL PORTFOLIO / 2026</p>
+      <p class="intro">你好，我是<strong>林悦。</strong></p>
+      <h1>会用 <span class="highlight">AI</span> 干活的<span class="line">销售部助理<span class="highlight">。</span></span></h1>
+      <p class="description">让 AI 走进日常工作。<br>从表格、PPT 到内容创作，把重复的事情交给工具，把时间留给新的想法。</p>
+      <div class="actions"><a class="primary" href="#preview-note">探索我的作品 <span aria-hidden="true">↗</span></a><a class="secondary" href="mailto:linyue.demo@example.com">联系我 <span aria-hidden="true">↗</span></a></div>
+      <p class="demo">示例作品集 / 人物及公司为虚构 / 邮箱为示例</p>
+    </div>
+    <div>
+      <figure class="map" aria-label="林悦的能力图谱">
+        <figcaption class="map-heading"><span>能力图谱 / SKILL MAP</span><span>PROFILE — 01</span></figcaption>
+        <div class="map-visual">
+          <svg viewBox="0 0 340 280" aria-hidden="true"><circle cx="170" cy="140" r="94"/><circle class="signal" cx="170" cy="140" r="117"/><path d="M170 12v35m0 186v35M42 140h35m186 0h35M95 72l40 40m70 56 40 40M95 208l40-40m70-56 40-40"/><path class="signal" d="M65 53h38l33 35m139-35h-38l-33 35M65 227h38l33-35m139 35h-38l-33-35"/></svg>
+          <div class="avatar"><img src="../images/avatar.png" width="600" height="600" alt="林悦的示例插画头像"></div>
+          <span class="node node-1">办公自动化</span><span class="node node-2">数据整理</span><span class="node node-3">短视频策划</span><span class="node node-4">AI 小工具</span>
+        </div>
+        <div class="map-footer"><div class="metric"><strong>05</strong><small>办公技能</small></div><div class="metric"><strong>04</strong><small>作品实践</small></div><div class="metric"><strong>半<span>年</span></strong><small>自学 AI</small></div></div>
+      </figure>
+      <p class="map-caption">用工具连接想法，用实践积累能力。</p>
+    </div>
+  </main>
+  <footer class="foot"><div class="foot-skills"><span><i>01</i> 办公自动化</span><span><i>02</i> 数据整理</span><span><i>03</i> 内容创作</span><span><i>04</i> AI 小工具</span></div><p class="preview-note" id="preview-note">B / 深色科技 · 首屏风格预览<br>作品区待选定风格后接入</p></footer>
+</div>
+<nav class="switcher" aria-label="切换首屏风格"><a class="arrow" href="style-a.html" aria-label="上一个风格：A 简约白">←</a><span class="switch-label">首屏预览</span><a href="style-a.html">A 简约白</a><a href="style-b.html" aria-current="page">B 深色科技</a><a href="style-c.html">C 温暖手绘</a><a class="arrow" href="style-c.html" aria-label="下一个风格：C 温暖手绘">→</a></nav>
+<script>
+document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||event.target.closest('input,textarea,[contenteditable]'))return;if(event.key==='ArrowLeft'){event.preventDefault();location.href='style-a.html'}if(event.key==='ArrowRight'){event.preventDefault();location.href='style-c.html'}});
+</script>
+</body>
+</html>

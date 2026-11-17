@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- 首屏风格原型 A：简约白。只用于比较设计，不包含整站。 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="林悦示例作品集首屏，A 简约白方案。使用系统字体和本地素材。">
+<title>A 简约白 · 林悦作品集首屏</title>
+<link rel="icon" href="../images/avatar.png" type="image/png">
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;color:#202020;background:#fff;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit}p,h1,h2,figure{margin:0}a:focus-visible{outline:2px solid #222;outline-offset:5px}::selection{background:#e7e7e7}img{display:block;max-width:100%;height:auto}h1,p,a,span{overflow-wrap:anywhere}
+.page{width:min(1160px,calc(100% - 112px));margin:auto;padding-bottom:110px}
+.header{height:100px;border-bottom:1px solid #e9e9e9;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:13px;font-size:23px;font-weight:700;letter-spacing:-.05em}.brand-mark{width:21px;height:21px;background:#202020;display:inline-block;border-radius:50% 0 0 0}.brand small{font-size:11px;color:#8c8c8c;letter-spacing:.12em;font-weight:400;margin-left:11px}
+.nav{display:flex;align-items:center;gap:34px;font-size:13px;color:#777}.nav a{min-height:44px;display:inline-flex;align-items:center}.nav span:first-child{color:#222}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:70px;align-items:center;min-height:590px;padding:64px 0 54px}
+.eyebrow{font-size:11px;letter-spacing:.17em;color:#888;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:28px;height:1px;background:#333}
+.greeting{font-size:25px;font-weight:400;margin-top:24px;letter-spacing:-.02em}.name{display:block;font-size:clamp(80px,8.5vw,118px);line-height:1.3;font-weight:650;letter-spacing:-.07em}.name span{color:#aaa}
+.tagline{font-size:27px;line-height:1.6;letter-spacing:-.03em;margin-top:17px}.description{font-size:15px;line-height:1.95;color:#777;margin-top:20px;max-width:450px}
+.actions{display:flex;align-items:center;gap:28px;margin-top:32px}.primary{background:#222;color:white;min-height:51px;padding:12px 23px;display:inline-flex;align-items:center;gap:32px;border:1px solid #222;font-size:14px}.primary:hover{background:#444}.secondary{font-size:14px;border-bottom:1px solid #c3c3c3;min-height:44px;display:inline-flex;align-items:center;gap:18px}.demo{font-size:11px;color:#888;margin-top:24px}
+.portrait{position:relative;max-width:350px;justify-self:end;width:100%;border:1px solid #e4e4e4;padding:40px 32px 22px;background:#fcfcfc}.portrait:before{content:"01 / PROFILE";position:absolute;left:17px;top:13px;font-size:9px;letter-spacing:.14em;color:#999}.portrait img{width:245px;aspect-ratio:1;border-radius:50%;filter:grayscale(1);margin:9px auto 30px}.portrait figcaption{display:flex;justify-content:space-between;border-top:1px solid #ddd;padding-top:17px;font-size:11px;gap:12px;color:#888}.portrait figcaption strong{font-size:13px;color:#333;font-weight:500}.portrait figcaption span{white-space:nowrap}
+.foot{display:flex;justify-content:space-between;gap:28px;border-top:1px solid #e9e9e9;padding-top:24px;align-items:center}.skills{display:flex;gap:23px;font-size:11px;color:#777;flex-wrap:wrap}.skills span+span:before{content:"/";margin-right:23px;color:#bbb}.preview-note{font-size:11px;color:#999;text-align:right}
+.switcher{position:fixed;z-index:10;bottom:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;max-width:calc(100% - 24px);padding:6px;border:1px solid #d5d6d8;border-radius:12px;background:#fff;color:#555;box-shadow:0 8px 30px #00000012;font:12px/1.4 system-ui,"Microsoft YaHei",sans-serif;white-space:nowrap}.switcher a{display:flex;align-items:center;justify-content:center;min-height:40px;padding:8px 16px;border-radius:7px}.switcher a:hover{background:#eee}.switcher a[aria-current]{background:#23272c;color:#fff}.switcher .switch-label{font-size:10px;padding:0 12px;color:#999}.switcher .arrow{font-size:17px;padding:8px 12px}
+@media(min-height:850px) and (min-width:900px){.hero{min-height:calc(100svh - 283px)}}
+@media(max-width:950px){.page{width:calc(100% - 72px)}.hero{gap:35px;min-height:540px}.tagline{font-size:22px}.portrait{padding:36px 22px 18px}.nav{gap:22px}.brand small{display:none}.skills{gap:15px}.skills span+span:before{margin-right:15px}}
+@media(max-width:640px){.page{width:calc(100% - 40px);padding-bottom:100px}.header{height:76px;gap:14px}.brand{font-size:20px;gap:9px}.brand-mark{width:17px;height:17px}.nav{gap:17px;font-size:11px}.nav span:first-child{display:none}.hero{grid-template-columns:1fr;gap:32px;padding-top:38px;padding-bottom:32px;min-height:0}.greeting{font-size:23px;margin-top:21px}.name{font-size:80px}.tagline{font-size:21px;margin-top:10px}.description{font-size:15px;margin-top:14px}.actions{margin-top:23px;gap:25px}.primary{min-height:48px;font-size:13px}.secondary{font-size:13px}.demo{font-size:10px;margin-top:18px}.portrait{max-width:250px;justify-self:center;padding:29px 24px 15px}.portrait img{width:150px;margin:7px auto 18px}.portrait figcaption{padding-top:12px;font-size:10px}.portrait figcaption strong{font-size:11px}.foot{align-items:start;gap:16px;padding-top:20px;flex-direction:column}.skills{font-size:10px;gap:11px}.skills span+span:before{margin-right:11px}.preview-note{text-align:left;font-size:10px}.switcher{bottom:12px;gap:2px;padding:4px;border-radius:10px}.switcher a{padding:8px 9px;font-size:11px;min-height:40px}.switcher .switch-label{display:none}.switcher .arrow{padding:8px 10px}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <a class="brand" href="style-a.html" aria-label="A 简约白，林悦首屏"><i class="brand-mark" aria-hidden="true"></i>林悦<small>PORTFOLIO / 2026</small></a>
+    <nav class="nav" aria-label="页面导航示意"><span>关于我</span><span>我的作品</span><a href="mailto:linyue.demo@example.com">联系我 ↗</a></nav>
+  </header>
+  <main class="hero">
+    <div>
+      <p class="eyebrow">个人作品集 / 2026</p>
+      <h1 class="greeting">你好，我是<span class="name">林悦<span>。</span></span></h1>
+      <p class="tagline">会用 AI 干活的销售部助理</p>
+      <p class="description">自学 AI 半年，把表格、PPT、报销和会议纪要，<br>变成日常工作里用得上的方法与工具。</p>
+      <div class="actions"><a class="primary" href="#preview-note">查看我的作品 <span aria-hidden="true">↗</span></a><a class="secondary" href="mailto:linyue.demo@example.com">联系我 <span aria-hidden="true">↗</span></a></div>
+      <p class="demo">示例作品集 · 人物及公司为虚构 · 邮箱为示例</p>
+    </div>
+    <figure class="portrait"><img src="../images/avatar.png" width="600" height="600" alt="林悦的示例插画头像，黑白呈现"><figcaption><strong>把想法，做成作品。</strong><span>边做 / 边学</span></figcaption></figure>
+  </main>
+  <footer class="foot"><div class="skills" aria-label="擅长方向"><span>办公自动化</span><span>数据整理</span><span>短视频策划</span><span>AI 小工具</span></div><p class="preview-note" id="preview-note">A / 简约白 · 首屏风格预览<br>作品区待选定风格后接入</p></footer>
+</div>
+<nav class="switcher" aria-label="切换首屏风格"><a class="arrow" href="style-c.html" aria-label="上一个风格：C 温暖手绘">←</a><span class="switch-label">首屏预览</span><a href="style-a.html" aria-current="page">A 简约白</a><a href="style-b.html">B 深色科技</a><a href="style-c.html">C 温暖手绘</a><a class="arrow" href="style-b.html" aria-label="下一个风格：B 深色科技">→</a></nav>
+<script>
+document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||event.target.closest('input,textarea,[contenteditable]'))return;if(event.key==='ArrowLeft'){event.preventDefault();location.href='style-c.html'}if(event.key==='ArrowRight'){event.preventDefault();location.href='style-b.html'}});
+</script>
+</body>
+</html>
