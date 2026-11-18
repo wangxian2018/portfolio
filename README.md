@@ -21,7 +21,7 @@ python -m http.server 4174 --bind 127.0.0.1
 - 个人资料、卡片和详情文字：`index.html`。
 - 页面样式与手机适配：`styles.css`。
 - 弹窗与图片失败占位：`script.js`。
-- 头像与四张作品图：`images/`。均为无损优化的本地 PNG，每张小于 300KB；原始素材未改动。
+- 头像与五个作品的图片：`images/`。现有 PNG 为无损优化版本；第 5 个作品暂用灰色占位图 `photo-tool-placeholder.svg`。所有图片均为本地文件，每张小于 300KB；原始素材未改动。
 - 每个作品卡片的 `data-project` 对应文档末尾同名 `template`，维护时应同时修改卡片摘要与详情模板。
 - 三个首屏样稿：`样稿/style-a.html`、`style-b.html`、`style-c.html`。样稿统一引用 `../images/avatar.png`，相互切换仍可用。
 
